@@ -5,3 +5,4 @@ Objectives of the project are to learn a lot of different stuff including but no
  - The technologies and concepts related to event driven applications
  - How to design and architect an application
  - How to build, test and deploy an application to a cloud host
+ - Remind myself how things work
