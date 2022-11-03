@@ -67,7 +67,9 @@ public class Person {
 		return moniker;
 	}
 	
-
+	public void setMoniker(String moniker) {
+		this.moniker = moniker;
+	}
 	
 	@Override
 	public String toString() {

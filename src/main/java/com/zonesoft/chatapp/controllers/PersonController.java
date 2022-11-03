@@ -65,8 +65,8 @@ public class PersonController {
     @DeleteMapping("/{id}")
     public Mono<ResponseEntity<Void>> deleteUserById(@PathVariable String id){
         return service.deleteById(id)
-                .map( r -> ResponseEntity.ok().<Void>build())
-                .defaultIfEmpty(ResponseEntity.notFound().build());
+                .map( r -> ResponseEntity.ok().<Void>build());
+//                .defaultIfEmpty(ResponseEntity.notFound().build());
     }
 
 //    @GetMapping("/search")

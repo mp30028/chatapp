@@ -27,7 +27,7 @@ public class PersonService {
 	}
 	
 	public Mono<Person> update(Person person){
-		return this.insert(person);
+		return repository.save(person);
 	}
 	
 	public Flux<Person> saveAll(List<Person> persons){
