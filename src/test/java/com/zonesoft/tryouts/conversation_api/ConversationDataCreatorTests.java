@@ -3,7 +3,7 @@ package com.zonesoft.tryouts.conversation_api;
 
 import static com.zonesoft.tryouts.conversation_api.data_generators.GeneratorCore.*;
 
-
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,9 +18,10 @@ import com.zonesoft.chatapp.repositories.PersonRepository;
 
 import reactor.core.publisher.Mono;
 
+@Disabled
 @SpringBootTest(classes = ChatApplication.class)
-class ConversationDataCreator {
-	private static final Logger LOGGER = LoggerFactory.getLogger(ConversationDataCreator.class);
+class ConversationDataCreatorTests {
+	private static final Logger LOGGER = LoggerFactory.getLogger(ConversationDataCreatorTests.class);
 	
 	@Autowired ConversationRepository repository;
 	@Autowired PersonRepository personRepository;

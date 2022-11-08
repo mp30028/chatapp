@@ -1,5 +1,7 @@
 package com.zonesoft.tryouts.object_relationships;
 
+import org.junit.jupiter.api.Disabled;
+
 //import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -8,13 +10,14 @@ import org.slf4j.LoggerFactory;
 
 import com.zonesoft.tryouts.object_relationships.Building.Room;
 
-
+@Disabled
 class BuildingTest {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(BuildingTest.class);
 	
 
 	@Test
+	
 	void testMain() {
 		String buildingName = "White-House";
 		Building building = new Building(buildingName);

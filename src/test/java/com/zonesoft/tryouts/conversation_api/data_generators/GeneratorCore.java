@@ -1,6 +1,7 @@
 package com.zonesoft.tryouts.conversation_api.data_generators;
 
 import java.time.OffsetDateTime;
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class GeneratorCore {
@@ -314,10 +315,8 @@ public class GeneratorCore {
 		return ThreadLocalRandom.current().nextLong(min, max);
 	}
 	
-	public static long generateUUID() {
-		long min = 99999L;
-		long max = 1000000L;
-		return ThreadLocalRandom.current().nextLong(min, max);
+	public static String generateUUID() {
+		return UUID.randomUUID().toString();
 	}
 	
 }

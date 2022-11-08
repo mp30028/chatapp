@@ -6,10 +6,12 @@ import java.time.OffsetDateTime;
 
 import static com.zonesoft.tryouts.conversation_api.data_generators.GeneratorCore.*;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@Disabled
 class GeneratorCoreTest {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(GeneratorCoreTest.class);
@@ -26,6 +28,7 @@ class GeneratorCoreTest {
 		LOGGER.debug("odt = {}",odt);
 	}
 
+	@Test
 	void generateExampleName(Gender gender) {
 		String firstname = generateFirstName(gender);
 		String lastname = generateLastName();
